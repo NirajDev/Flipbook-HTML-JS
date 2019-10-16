@@ -2,145 +2,145 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Cruise Book</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="responsiveslides.css">
-  <link rel="stylesheet" href="demo.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-  <script src="responsiveslides.min.js"></script>
-  <script>
-    // You can also use "$(window).load(function() {"
-    $(function () {
-      $("#slider4").responsiveSlides({
-        auto: false,
-        pager: false,
-        nav: true,
-        speed: 500,
-        namespace: "callbacks",
-        before: function () {
-          $('.events').append("<li>before event fired.</li>");
-        },
-        after: function () {
-          $('.events').append("<li>after event fired.</li>");
-        }
-      });
+    <meta charset="utf-8">
+    <title>Cruise Book</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="responsiveslides.css">
+    <link rel="stylesheet" href="demo.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function() {
+            $("#slider4").responsiveSlides({
+                auto: false,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function() {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function() {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
 
 
-$(document).keydown(function(e) {
-    if (e.keyCode === 37) {
-       // Previous
-       $(".prev").click();
-       return false;
-    }
-    if (e.keyCode === 39) {
-       // Next
-       $(".next").click();
-       return false;
-    }
-});
+            $(document).keydown(function(e) {
+                if (e.keyCode === 37) {
+                    // Previous
+                    $(".prev").click();
+                    return false;
+                }
+                if (e.keyCode === 39) {
+                    // Next
+                    $(".next").click();
+                    return false;
+                }
+            });
 
-    });
-  </script>
+        });
+    </script>
 </head>
 
 <body>
-  <div id="wrapper">
-    <!-- Slideshow 4 -->
-    <div class="callbacks_container">
-      <ul class="rslides" id="slider4">
-        <li>
-          <img src="images/1.gif" alt="" style="width:20%;margin-top: 20%; margin-left: 40%;">
-        </li>
-        <li>
-          
-          <img src="images/2.gif" alt="" style="position: relative;">
-          <img src="images/small/1.gif" alt="" style="position: absolute; width: 22%; margin-top:2%;margin-left: 2%;">
-          <img src="images/small/2.gif" alt="" style="position: absolute; width: 22.7%; margin-top:15.6%;margin-left: 65.3%;">
-          
-        </li>
-        <li>
-          <img src="images/3.gif" alt="" style="position: relative;">
-          <img src="images/small/3a.gif" alt="" style="position: absolute; width: 33.8%; margin-top:2.2%;margin-left: 12.3%;">
-          <img src="images/small/3b.gif" alt="" style="position: absolute; width: 17%; margin-top:2.2%;margin-left: 46.6%;">
-          <img src="images/small/3c.gif" alt="" style="position: absolute; width: 16.5%; margin-top:17.5%;margin-left: 46.9%;">
-          <img src="images/small/3d.gif" alt="" style="position: absolute; width: 16.5%; margin-top:32.2%;margin-left: 46.9%;">
-          <img src="images/small/3.gif" alt="" style="position: absolute; width: 16.8%; height: 29%; margin-top:2.2%;margin-left: 64.3%;">
-          <img src="images/small/4.gif" alt="" style="position: absolute; width: 16.8%; height: 30%;margin-top:32.3%;margin-left: 64.3%;">
+    <div id="wrapper">
+        <!-- Slideshow 4 -->
+        <div class="callbacks_container">
+            <ul class="rslides" id="slider4">
+                <li>
+                    <img src="images/1.gif" alt="" style="width:20%;margin-top: 20%; margin-left: 40%;">
+                </li>
+                <li>
 
-        </li>
-        <li>
-          <img src="images/4.gif" alt="">
-          
-        </li>
-        <li>
-          <img src="images/5.gif" alt="">
-          <img src="images/small/5.gif" alt="" style="position: absolute; width: 16%; margin-top:2.2%;margin-left: 82.2%;">
-          <img src="images/small/6.gif" alt="" style="position: absolute; width: 16%; margin-top:17.5%;margin-left: 82.2%;">
-          <img src="images/small/7.gif" alt="" style="position: absolute; width: 16%; margin-top:33%;margin-left: 82.2%;">
-        </li>
-        <li>
-          <img src="images/6.gif" alt="">
-          <img src="images/small/8.gif" alt="" style="position: absolute; width: 15%; margin-top:2.2%;margin-left: 84%;">
-          <img src="images/small/9.gif" alt="" style="position: absolute; width: 15%; margin-top:17.7%;margin-left: 84%;">
-          <img src="images/small/10.gif" alt="" style="position: absolute; width: 15%; margin-top:33.2%;margin-left: 84%;">
-        </li>
-        </li>
-        <li>
-          <img src="images/7.gif" alt="">
-          <img src="images/small/11.gif" alt="" style="position: absolute; width: 22%; margin-top:2.2%;margin-left: 52.5%;">
-          <img src="images/small/12.gif" alt="" style="position: absolute; width: 22%; margin-top:33%;margin-left: 52.5%;">
-          <img src="images/small/13.gif" alt="" style="position: absolute; width: 22%; margin-top:2.2%;margin-left: 75%;">
-          <img src="images/small/14.gif" alt="" style="position: absolute; width: 22%; margin-top:14.8%;margin-left: 75%;">
-          <img src="images/small/15.gif" alt="" style="position: absolute; width: 22%; margin-top:29.2%;margin-left: 75%;">
-        </li>
-        <li>
-          <img src="images/8.gif" alt="">
-        </li>
-        <li>
-          <img src="images/9.gif" alt="">
+                    <img src="images/2.gif" alt="" style="position: relative;">
+                    <img src="images/small/1.gif" alt="" style="position: absolute; width: 22%; margin-top:2%;margin-left: 2%;">
+                    <img src="images/small/2.gif" alt="" style="border-radius:50%;position: absolute; width: 22.7%; margin-top:15.6%;margin-left: 65.3%;">
 
-          <img src="images/small/16.gif" alt="" style="position: absolute; width: 21%; margin-top:2%;margin-left:3%;">
-          <img src="images/small/17.gif" alt="" style="position: absolute; width: 21%; margin-top:24%;margin-left: 3%;">
-          <img src="images/small/18.gif" alt="" style="position: absolute; width: 21%; margin-top:2%;margin-left:25%;">
-          <img src="images/small/19.gif" alt="" style="position: absolute; width: 21%; margin-top:24%;margin-left:25%;">
-          <img src="images/small/21.gif" alt="" style="position: absolute; width: 22%; margin-top:12.4%;margin-left: 76.5%;">
+                </li>
+                <li>
+                    <img src="images/3.gif" alt="" style="position: relative;">
+                    <img src="images/small/3a.gif" alt="" style="position: absolute; width: 33.8%; margin-top:2.2%;margin-left: 12.3%;">
+                    <img src="images/small/3b.gif" alt="" style="position: absolute; width: 17%; margin-top:2.2%;margin-left: 46.6%;">
+                    <img src="images/small/3c.gif" alt="" style="position: absolute; width: 16.5%; margin-top:17.5%;margin-left: 46.9%;">
+                    <img src="images/small/3d.gif" alt="" style="position: absolute; width: 16.5%; margin-top:32.2%;margin-left: 46.9%;">
+                    <img src="images/small/3.gif" alt="" style="position: absolute; width: 16.8%; height: 29%; margin-top:2.2%;margin-left: 64.3%;">
+                    <img src="images/small/4.gif" alt="" style="position: absolute; width: 16.8%; height: 30%;margin-top:32.3%;margin-left: 64.3%;">
+
+                </li>
+                <li>
+                    <img src="images/4.gif" alt="">
+
+                </li>
+                <li>
+                    <img src="images/5.gif" alt="">
+                    <img src="images/small/5.gif" alt="" style="position: absolute; width: 16%; margin-top:2.2%;margin-left: 82.2%;">
+                    <img src="images/small/6.gif" alt="" style="position: absolute; width: 16%; margin-top:17.5%;margin-left: 82.2%;">
+                    <img src="images/small/7.gif" alt="" style="position: absolute; width: 16%; margin-top:33%;margin-left: 82.2%;">
+                </li>
+                <li>
+                    <img src="images/6.gif" alt="">
+                    <img src="images/small/8.gif" alt="" style="position: absolute; width: 15%; margin-top:2.2%;margin-left: 84%;">
+                    <img src="images/small/9.gif" alt="" style="position: absolute; width: 15%; margin-top:17.7%;margin-left: 84%;">
+                    <img src="images/small/10.gif" alt="" style="position: absolute; width: 15%; margin-top:33.2%;margin-left: 84%;">
+                </li>
+                </li>
+                <li>
+                    <img src="images/7.gif" alt="">
+                    <img src="images/small/11.gif" alt="" style="position: absolute; width: 22%; margin-top:2.2%;margin-left: 52.5%;">
+                    <img src="images/small/12.gif" alt="" style="position: absolute; width: 22%; margin-top:33%;margin-left: 52.5%;">
+                    <img src="images/small/13.gif" alt="" style="position: absolute; width: 22%; margin-top:2.2%;margin-left: 75%;">
+                    <img src="images/small/14.gif" alt="" style="position: absolute; width: 22%; margin-top:14.8%;margin-left: 75%;">
+                    <img src="images/small/15.gif" alt="" style="position: absolute; width: 22%; margin-top:29.2%;margin-left: 75%;">
+                </li>
+                <li>
+                    <img src="images/8.gif" alt="">
+                </li>
+                <li>
+                    <img src="images/9.gif" alt="">
+
+                    <img src="images/small/16.gif" alt="" style="position: absolute; width: 21%; margin-top:2%;margin-left:3%;">
+                    <img src="images/small/17.gif" alt="" style="position: absolute; width: 21%; margin-top:24%;margin-left: 3%;">
+                    <img src="images/small/18.gif" alt="" style="position: absolute; width: 21%; margin-top:2%;margin-left:25%;">
+                    <img src="images/small/19.gif" alt="" style="position: absolute; width: 21%; margin-top:24%;margin-left:25%;">
+                    <img src="images/small/21.gif" alt="" style="border-radius:50%;position: absolute; width: 22%; margin-top:12.4%;margin-left: 76.5%;">
 
 
-        </li>
-        <li>
-          <img src="images/10.gif" alt="">
-          
-          <img src="images/small/22.gif" alt="" style="position: absolute; width: 10%; margin-top:2.9%;margin-left: 87.2%;">
-          <img src="images/small/23.gif" alt="" style="position: absolute; width: 10%; margin-top:14.3%;margin-left: 87.2%;">
-          <img src="images/small/24.gif" alt="" style="position: absolute; width: 10%; margin-top:25.7%;margin-left: 87.2%;">
-          <img src="images/small/25.gif" alt="" style="position: absolute; width: 10%; margin-top:37.2%;margin-left: 87.2%;">
-        </li>
-        <li>
-          <img src="images/11.gif" alt="">
-          <img src="images/small/27.gif" alt="" style="position: absolute; width: 14.6%; margin-top:2.5%;margin-left: 84.8%;">
-          <img src="images/small/28.gif" alt="" style="position: absolute; width: 14.6%; margin-top:19%;margin-left: 84.8%;">
-          <img src="images/small/29.gif" alt="" style="position: absolute; width: 14.6%; margin-top:35.5%;margin-left: 84.8%;">
-          
-        </li>
-        <li>
-          <img src="images/12.gif" alt="">
-          <img src="images/small/30a.gif" alt="" style="position: absolute; width: 22%; margin-top:31%;margin-left: 32%;">
-          <img src="images/small/30.gif" alt="" style="position: absolute; width: 22%; margin-top:31%;margin-left: 54.5%;">
-          <img src="images/small/31.gif" alt="" style="position: absolute; width: 22%; margin-top:31%;margin-left: 77%;">
-          
-        </li>
-        <li>
-          <img src="images/13.gif" alt="">
-          <img src="images/small/32.gif" alt="" style="position: absolute; width: 15%; margin-top:17%;margin-left: 53.5%;">
-          <img src="images/small/33.gif" alt="" style="position: absolute; width: 15%; margin-top:17%;margin-left: 68.5%;">
-          <img src="images/small/34.gif" alt="" style="position: absolute; width: 15%; margin-top:17%;margin-left: 84%;">
-          
-        </li>
-</ul>
+                </li>
+                <li>
+                    <img src="images/10.gif" alt="">
+
+                    <img src="images/small/22.gif" alt="" style="border-radius:50%;position: absolute; width: 10%; margin-top:2.9%;margin-left: 87.2%;">
+                    <img src="images/small/23.gif" alt="" style="border-radius:50%;position: absolute; width: 10%; margin-top:14.3%;margin-left: 87.2%;">
+                    <img src="images/small/24.gif" alt="" style="border-radius:50%;position: absolute; width: 10%; margin-top:25.7%;margin-left: 87.2%;">
+                    <img src="images/small/25.gif" alt="" style="border-radius:50%;position: absolute; width: 10%; margin-top:37.2%;margin-left: 87.2%;">
+                </li>
+                <li>
+                    <img src="images/11.gif" alt="">
+                    <img src="images/small/27.gif" alt="" style="border-radius:50%;position: absolute; width: 14.6%; margin-top:2.5%;margin-left: 84.8%;">
+                    <img src="images/small/28.gif" alt="" style="border-radius:50%;position: absolute; width: 14.6%; margin-top:19%;margin-left: 84.8%;">
+                    <img src="images/small/29.gif" alt="" style="border-radius:50%;position: absolute; width: 14.6%; margin-top:35.5%;margin-left: 84.8%;">
+
+                </li>
+                <li>
+                    <img src="images/12.gif" alt="">
+                    <img src="images/small/30a.gif" alt="" style="position: absolute; width: 22%; margin-top:31%;margin-left: 32%;">
+                    <img src="images/small/30.gif" alt="" style="position: absolute; width: 22%; margin-top:31%;margin-left: 54.5%;">
+                    <img src="images/small/31.gif" alt="" style="position: absolute; width: 22%; margin-top:31%;margin-left: 77%;">
+
+                </li>
+                <li>
+                    <img src="images/13.gif" alt="">
+                    <img src="images/small/32.gif" alt="" style="position: absolute; width: 15%; margin-top:17%;margin-left: 53.5%;">
+                    <img src="images/small/33.gif" alt="" style="position: absolute; width: 15%; margin-top:17%;margin-left: 68.5%;">
+                    <img src="images/small/34.gif" alt="" style="position: absolute; width: 15%; margin-top:17%;margin-left: 84%;">
+
+                </li>
+            </ul>
+        </div>
+        <!-- This is here just to demonstrate the callbacks -->
     </div>
-    <!-- This is here just to demonstrate the callbacks -->
-  </div>
 </body>
 
 </html>
